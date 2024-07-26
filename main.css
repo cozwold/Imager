@@ -1,5 +1,6 @@
 body {
     background-color: #111216;
+    color: #FFFFFF; /* Set a global text color */
 }
 
 #main {
@@ -8,14 +9,25 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF; /* Ensure text color is consistent */
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Adjust as needed for spacing */
+}
+
+#input_images, #processed_images {
+    width: 45%; /* Adjust as needed for spacing */
 }
 
 #images {
     width: 10px;
     text-align: left;
     font-size: x-large;
-    color: white;
+    color: #FFFFFF;
     display: flex;
     flex-direction: column;
 }
@@ -24,17 +36,17 @@ body {
     width: 400px;
     text-align: left;
     font-size: x-large;
-    color: white;
+    color: #FFFFFF;
     display: flex;
     flex-direction: column;
 }
 
 #links a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     margin-top: 20px;
     margin: 10px;
-    border: white 1px solid;
+    border: #FFFFFF 1px solid;
     border-radius: 5px;
     padding: 10px;
 }
@@ -52,4 +64,18 @@ body {
     max-width: 200px;
     max-height: 200px;
     object-fit: cover;
+}
+
+button, input[type="text"], input[type="file"], input[type="button"], textarea {
+    background-color: #111216; /* Match background color */
+    color: #FFFFFF; /* Ensure text is visible */
+    border: 1px solid #FFFFFF; /* Add a border for visibility */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+button:hover, input[type="text"]:hover, input[type="file"]:hover, input[type="button"]:hover, textarea:hover {
+    background-color: #1f1f1f; /* Slightly lighter on hover */
+    cursor: pointer;
 }
